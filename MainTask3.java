@@ -8,40 +8,36 @@ public class MainTask3 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
 
-        String fCountry;
-        String sCountry;
-        String tCountry;
-        float unitsPerMinute;
+        float c1;
+        float c2;
+        float c3;
         float fTime;
         float sTime;
         float tTime;
 
-        System.out.print("Please enter units per minute: ");
-        unitsPerMinute = Float.parseFloat(br.readLine());
-
-        System.out.print("First country: ");
-        fCountry = br.readLine();
+        System.out.print("Please enter units per minute for first country: ");
+        c1 = Float.parseFloat(br.readLine());
         System.out.print("How much talk first person?: ");
         fTime = Float.parseFloat(br.readLine());
 
-        System.out.print("Second country: ");
-        sCountry = br.readLine();
+        System.out.print("Please enter units per minute for second country: ");
+        c2 = Float.parseFloat(br.readLine());
         System.out.print("How much talk second person?: ");
         sTime = Float.parseFloat(br.readLine());
 
-        System.out.print("Third country: ");
-        tCountry = br.readLine();
+        System.out.print("Please enter units per minute for third country: ");
+        c3 = Float.parseFloat(br.readLine());
         System.out.print("How much talk third person?: ");
         tTime = Float.parseFloat(br.readLine());
 
-        float f_result = fTime * unitsPerMinute;
-        float s_result = sTime * unitsPerMinute;
-        float t_result = tTime * unitsPerMinute;
+        float f_result = fTime * c1;
+        float s_result = sTime * c2;
+        float t_result = tTime * c3;
         float generalResult = f_result + s_result + t_result;
 
-        System.out.println("Count for first call in: " + fCountry + " is " + f_result + ";");
-        System.out.println("Count for second call: " + sCountry + " is " + s_result + ";");
-        System.out.println("Count for third call: " + tCountry + " is "+ t_result + ";");
+        System.out.println("Count for first call in is: " + f_result + ";");
+        System.out.println("Count for second call is: " + s_result + ";");
+        System.out.println("Count for third call is: "+ t_result + ";");
         System.out.println("Count for all calls together: " + generalResult + ";");
     }
 

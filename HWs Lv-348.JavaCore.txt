@@ -1,10 +1,11 @@
-                      HW1
+                      HW1  HW2
+                          class
 Ruslan Zhezlo          +
 Vitalii Yurchenko      +
 Oleksandr Kachmar
 Nazarii Kostiuk        +
-Taras Tkhir            +
+Taras Tkhir            +    +
 Maksym Burko
-Liubomyr Virt
+Liubomyr Virt          +
 Nazar Smuk             +
 Vladyslav Lukashyn

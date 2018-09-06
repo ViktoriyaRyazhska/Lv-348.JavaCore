@@ -1,9 +1,14 @@
 package homework2;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 public class Person {
 	private String name;
 	private int birthYear;
+	
+	Scanner console = new Scanner(System.in);
+	LocalDate year = LocalDate.now();
+	
 	
 	//getter and setter for a variable name
 	public String getName() {
@@ -41,19 +46,20 @@ public class Person {
 	
 	//method to input information about a person
 	
-	public String input () {
-		@SuppressWarnings("resource")
-		Scanner console = new Scanner(System.in);
-		System.out.println("What is your name? ");
-		String personInfo = console.nextLine();
-		System.out.println(personInfo);
-		return personInfo;
+	public String inputName () {
+		System.out.println("Enter your name, please");
+		return name = console.nextLine();
+	//asking the user to enter his/her year of birth
+	}
+		public int inputBirthYear () {
+		System.out.println("Enter the year you were born in");
+		return birthYear = console.nextInt();
 	}
 	
 	//method to output information about a person
 	
 	public String toString() {
-		return "Name of the person: " + this.name + ". "
+		return "Person's name: " + this.name + ". "
 				+ "Age:" + this.calcAge(birthYear);
 	}
 	//method to change name of the person

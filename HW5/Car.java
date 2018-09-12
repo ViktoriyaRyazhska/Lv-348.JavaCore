@@ -45,10 +45,12 @@ public class Car {
     public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
 
-        Car firstCar = new Car(typeCar.CROSSOVER, 2016, 800);
-        Car secondCar = new Car(typeCar.SEDAN, 2017, 620);
-        Car thirdCar = new Car(typeCar.COUPE, 2015, 640);
-        Car fourthCar = new Car(typeCar.SUV, 2018, 640);
+        Car[] cars = {
+                new Car(typeCar.CROSSOVER, 2016, 800),
+                new Car(typeCar.SEDAN, 2017, 620),
+                new Car(typeCar.COUPE, 2015, 640),
+                new Car(typeCar.SUV, 2018, 640)
+        }
 
         Car[] cars = {firstCar, secondCar, thirdCar, fourthCar};
         getCarByYear(cars, sc);
@@ -71,10 +73,11 @@ public class Car {
     }
 
     public static void getCarSortedByYear(Car[] cars, Scanner sc) {
+        Car temp;
         for (int i = 0; i < cars.length; i++) {
             for (int j = i + 1; j < cars.length; j++) {
                 if (cars[i].yearOfProduction < cars[j].yearOfProduction) {
-                    Car temp = cars[i];
+                    temp = cars[i];
                     cars[i] = cars[j];
                     cars[j] = temp;
                 }

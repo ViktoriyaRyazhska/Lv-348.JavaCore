@@ -10,18 +10,11 @@ public class FirstTask {
     }
 
     public static int getDaysInMontth(Scanner sc) {
-        int iMonth = 0;
         int[] arrDays = {31, 28, 31, 30, 31, 30,
                 31, 31, 30, 31, 30, 31};
         System.out.print("Please enter number of month: ");
         int needMonth = sc.nextInt();
-        for (int i = 1; i < arrDays.length + 1; i++) {
-            if (needMonth == i) {
-                iMonth = arrDays[i - 1];
-                break;
-            }
-        }
-        return iMonth;
+        return arrDays[needMonth-1];
     }
 
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FourthTask {
     public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Product of positive numbers: " + getProduct(sc));
+        System.out.println("Product of even positive numbers: " + getProduct(sc));
     }
 
     public static int getProduct(Scanner sc) {
@@ -17,7 +17,9 @@ public class FourthTask {
             if (number <= 0) {
                 break;
             }
-            product *= number;
+            if (number % 2 == 0) {
+                product *= number;
+            }
         }
         return product;
     }

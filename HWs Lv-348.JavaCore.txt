@@ -1,11 +1,11 @@
-                      HW1  HW2   HW3
-                          class  if
+                      HW1  HW2   HW3  HW4
+                          class  if  Loops
 Ruslan Zhezlo          +    +
-Vitalii Yurchenko      +    +     +
+Vitalii Yurchenko      +    +     +    +
 Oleksandr Kachmar
-Nazarii Kostiuk        +    +
+Nazarii Kostiuk        +    +     +
 Taras Tkhir            +    +     +
 Maksym Burko           +    +
 Liubomyr Virt          +    +     .
 Nazar Smuk             +
-Vladyslav Lukashyn     +
+Vladyslav Lukashyn     +          .

@@ -1,68 +1,61 @@
-package homework2;
-
-import java.time.LocalDate;
 import java.util.Scanner;
+import java.time.LocalDate;
+
 public class Person {
+	
+	public static Scanner input = new Scanner(System.in);
+	public static LocalDate localDate = LocalDate.now();
+
+	
 	private String name;
 	private int birthYear;
 	
-	Scanner console = new Scanner(System.in);
-	LocalDate year = LocalDate.now();
-	
-	
-	//getter and setter for a variable name
 	public String getName() {
-		return this.name;
+		return name;
 	}
 	
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	//getter and setter for a variable birthYear
 	public int getBirthYear() {
-		return this.birthYear;
+		return birthYear;
 	}
-	
 	public void setBirthYear(int birthYear) {
 		this.birthYear = birthYear;
 	}
 	
-	//default constructor
-	
-	public Person() {}
-	
-	//constructor with 2 parameters
-	
+	public Person() {
+	}
+
+	public Person(String name) {
+		this.name = name;
+	}
+
 	public Person(String name, int birthYear) {
 		this.name = name;
 		this.birthYear = birthYear;
 	}
 	
-	//method to calculate the age of a person
+	
+	//method for calculating a person's age;
 	public int calcAge(int birthYear) {
-		return 2018 - birthYear;
+		int age = localDate.getYear() - birthYear;
+		return age;
 	}
 	
-	//method to input information about a person
-	
-	public String inputName () {
-		System.out.println("Enter your name, please");
-		return name = console.nextLine();
-	//asking the user to enter his/her year of birth
-	}
-		public int inputBirthYear () {
-		System.out.println("Enter the year you were born in");
-		return birthYear = console.nextInt();
+	//method to input info about a person
+	public void input () {
+		System.out.println("Enter the person's name");
+		name = input.nextLine();
+		System.out.println("Please, enter the person's year of birth");
+		birthYear = input.nextInt();
 	}
 	
-	//method to output information about a person
-	
-	public String toString() {
-		return "Person's name: " + this.name + ". "
-				+ "Age:" + this.calcAge(birthYear);
+	//method to output info about a person
+	public String output(int calcAge) {
+		return "[Name: " + name + ", age: " + calcAge(birthYear) +"]";
 	}
-	//method to change name of the person
+	//method for changing the person's name
 	public void changeName(String name) {
 		this.name = name;
 	}

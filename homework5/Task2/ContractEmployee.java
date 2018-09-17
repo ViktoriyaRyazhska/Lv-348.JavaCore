@@ -5,13 +5,6 @@ public class ContractEmployee extends Employee implements CalculatePay {
 
 	private String federalTaxIdmember;
 
-	public int getMonthsalary() {
-		return monthsalary;
-	}
-
-	public void setMonthsalary(int monthsalary) {
-		this.monthsalary = monthsalary;
-	}
 
 	public String getFederalTaxIdmember() {
 		return federalTaxIdmember;
@@ -28,7 +21,7 @@ public class ContractEmployee extends Employee implements CalculatePay {
 
 			System.out.println("Enter  your  monthly salary");
 
-			this.monthsalary = Integer.parseInt(reader.readLine());
+			setMonthsalary(Integer.parseInt(reader.readLine()));
 
 		} catch (NumberFormatException | IOException e) {
 
@@ -36,7 +29,7 @@ public class ContractEmployee extends Employee implements CalculatePay {
 			e.printStackTrace();
 		}
 
-		return monthsalary;
+		return getMonthsalary();
 	}
 
 	@Override

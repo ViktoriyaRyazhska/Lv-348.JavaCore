@@ -7,7 +7,7 @@ public class Employee {
 
 	private String name;
 
-	public int monthsalary;
+	private int monthsalary;
 
 	public Employee(String name, String emloyeeId) {
 
@@ -18,6 +18,15 @@ public class Employee {
 
 	public Employee() {
 
+	}
+	
+
+	public int getMonthsalary() {
+		return monthsalary;
+	}
+
+	public void setMonthsalary(int monthsalary) {
+		this.monthsalary = monthsalary;
 	}
 
 	public String getEmployeeId() {

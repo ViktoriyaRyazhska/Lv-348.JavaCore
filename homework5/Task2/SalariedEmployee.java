@@ -5,13 +5,7 @@ public class SalariedEmployee extends Employee implements CalculatePay {
 
 	private String socialSecurityNumber;
 
-	public int getMonthsalary() {
-		return monthsalary;
-	}
-
-	public void setMonthsalary(int monthsalary) {
-		this.monthsalary = monthsalary;
-	}
+	
 
 	public String getSocialSecurityNumber() {
 		return socialSecurityNumber;
@@ -32,14 +26,14 @@ public class SalariedEmployee extends Employee implements CalculatePay {
 
 			System.out.println("Enter  hourly rate! Dolars per hour");
 
-			this.monthsalary = Integer.parseInt(reader.readLine()) * hours;
+			setMonthsalary(Integer.parseInt(reader.readLine()) * hours);
 
 		} catch (NumberFormatException | IOException e) {
 
 			System.out.println("Wrong Data! " + e);
 			e.printStackTrace();
 		}
-		return monthsalary;
+		return getMonthsalary();
 
 	}
 

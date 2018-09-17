@@ -1,48 +1,33 @@
-package homework3;
-
 import java.util.Scanner;
 
 public class ThreeFloats {
 	
-	static Scanner input = new Scanner(System.in);
-	public static void main(String[] args) {
-		
-		float num1, num2, num3;
-		
-		System.out.println("Enter a float number");
-		num1 = input.nextFloat();
-		
-		System.out.println("Enter a float number");
-		num2 = input.nextFloat();
-		
-		System.out.println("Enter a float number");
-		num3 = input.nextFloat();
+	 private static Scanner input = new Scanner(System.in);
+	 private static float num1, num2, num3;
+	 public static void main(String[] args) {
 		
 		
-		checkForRange(num1, num2, num3);
+		
+		System.out.println("Enter three numbers");
+		num1 = Float.parseFloat(input.nextLine());
+		num2 = Float.parseFloat(input.nextLine());
+		num3 = Float.parseFloat(input.nextLine());
+		
+		checkForRange(num1);
+		checkForRange(num2);
+		checkForRange(num3);
 	}
 	
-	
-	
-	
-	public static void checkForRange(float num1, float num2, float num3) {
+	public static boolean checkForRange(float num1) {
 		if (num1 >= -5 && num1 <= 5) {
-			System.out.println("First number you have entered, namely " + num1 + ", belongs to the range [-5;5]");
+			System.out.println("Your number belongs to the range [-5; 5]");
+			return true;
 		} else {
-			System.out.println(num1 + " doesn't belong to the range [-5;5]");
-	}	if (num2 >= -5 && num2 <= 5) {
-		System.out.println("Second number you have entered, namely " + num2 + ", belongs to the range [-5;5]");
-	} else {
-		System.out.println(num2 + " doesn't belong to the range [-5;5]");
+			System.out.println("Your number doesn't belong to the range [-5; 5]");
+			return false;
+		}
+		
+		
 	}
-	if (num3 >= -5 && num3 <= 5) {
-		System.out.println("Third number you have entered, namely " + num3 + ", belongs to the range [-5;5]");
-	} else {
-		System.out.println(num3 + " doesn't belong to the range [-5;5]");
-	}
-	
-	
-	}
-	
 
 }

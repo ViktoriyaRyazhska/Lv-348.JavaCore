@@ -5,18 +5,18 @@ public class SalariedEmployee extends Employee implements CalculatePay {
 
 	private String socialSecurityNumber;
 
-	
-
 	public String getSocialSecurityNumber() {
+		
 		return socialSecurityNumber;
 	}
 
 	public void setSocialSecurityNumber(String socialSecurityNumber) {
+		
 		this.socialSecurityNumber = socialSecurityNumber;
 	}
 
 	@Override
-	public int calculatePay(BufferedReader reader) {
+	public void calculatePay(BufferedReader reader) {
 
 		try {
 
@@ -31,14 +31,15 @@ public class SalariedEmployee extends Employee implements CalculatePay {
 		} catch (NumberFormatException | IOException e) {
 
 			System.out.println("Wrong Data! " + e);
+			
 			e.printStackTrace();
 		}
-		return getMonthsalary();
 
 	}
 
 	@Override
 	public String toString() {
+		
 		return "SalariedEmployee [getMonthsalary()=" + getMonthsalary() + ", getEmployeeId()=" + getEmployeeId()
 				+ ", getName()=" + getName() + "]";
 	}

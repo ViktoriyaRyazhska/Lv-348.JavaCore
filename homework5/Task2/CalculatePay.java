@@ -2,6 +2,6 @@ import java.io.BufferedReader;
 
 public interface CalculatePay {
 
-	public int calculatePay(BufferedReader reader);
+	public void calculatePay(BufferedReader reader);
 
 }

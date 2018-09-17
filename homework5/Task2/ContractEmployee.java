@@ -5,17 +5,18 @@ public class ContractEmployee extends Employee implements CalculatePay {
 
 	private String federalTaxIdmember;
 
-
 	public String getFederalTaxIdmember() {
+		
 		return federalTaxIdmember;
 	}
 
 	public void setFederalTaxIdmember(String federalTaxIdmember) {
+		
 		this.federalTaxIdmember = federalTaxIdmember;
 	}
 
 	@Override
-	public int calculatePay(BufferedReader reader) {
+	public void calculatePay(BufferedReader reader) {
 
 		try {
 
@@ -29,11 +30,11 @@ public class ContractEmployee extends Employee implements CalculatePay {
 			e.printStackTrace();
 		}
 
-		return getMonthsalary();
 	}
 
 	@Override
 	public String toString() {
+		
 		return "ContractEmployee [getMonthsalary()=" + getMonthsalary() + ", getEmployeeId()=" + getEmployeeId()
 				+ ", getName()=" + getName() + "]";
 	}

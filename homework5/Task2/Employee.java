@@ -19,25 +19,29 @@ public class Employee {
 	public Employee() {
 
 	}
-	
 
 	public int getMonthsalary() {
+		
 		return monthsalary;
 	}
 
 	public void setMonthsalary(int monthsalary) {
+		
 		this.monthsalary = monthsalary;
 	}
 
 	public String getEmployeeId() {
+		
 		return employeeId;
 	}
 
 	public void setEmployeeId(String employeeId) {
+		
 		this.employeeId = employeeId;
 	}
 
 	public String getName() {
+		
 		return name;
 	}
 
@@ -78,6 +82,8 @@ public class Employee {
 		}
 		for (int i = 0; i < employee.length; i++) {
 			System.out.println(employee[i]);
+
+			System.out.println();
 		}
 
 	}

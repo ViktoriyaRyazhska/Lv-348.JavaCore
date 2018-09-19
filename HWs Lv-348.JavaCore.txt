@@ -1,11 +1,11 @@
                       HW1  HW2   HW3  HW4   HW5   HW6
                           class  if  Loops  OOP Сollect
-Ruslan Zhezlo          +    +
+Ruslan Zhezlo          +    +     +
 Vitalii Yurchenko      +    +     +    +     +
 Oleksandr Kachmar
 Nazarii Kostiuk        +    +     +    +     +
 Taras Tkhir            +    +     +    +     +     .
-Maksym Burko           +    +          +     +
+Maksym Burko           +    +          +     +     +
 Liubomyr Virt          +    +     +    +
 Nazar Smuk             +
 Vladyslav Lukashyn     +          .

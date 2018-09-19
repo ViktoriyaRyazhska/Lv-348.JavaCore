@@ -6,6 +6,6 @@ Oleksandr Kachmar
 Nazarii Kostiuk        +    +     +    +     +
 Taras Tkhir            +    +     +    +     +
 Maksym Burko           +    +          +     +
-Liubomyr Virt          +    +     .    .
+Liubomyr Virt          +    +     .    +
 Nazar Smuk             +
 Vladyslav Lukashyn     +          .

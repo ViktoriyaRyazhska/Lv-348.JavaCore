@@ -3,7 +3,7 @@
 Ruslan Zhezlo          +    +     +
 Vitalii Yurchenko      +    +     +    +     +     +
 Oleksandr Kachmar
-Nazarii Kostiuk        +    +     +    +     +
+Nazarii Kostiuk        +    +     +    +     +     +
 Taras Tkhir            +    +     +    +     +     .
 Maksym Burko           +    +          +     +     +
 Liubomyr Virt          +    +     +    +

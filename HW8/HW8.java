@@ -54,15 +54,19 @@ public class HW8 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sb.charAt(i);
         }
+        int countDelete = 0;
+
         for (int i = 0; i < arr.length - 1; i++) {
             if ((arr[i] == arr[i + 1]) && (arr[i] == ' ')) {
-                sb.delete(i, i + 1);
+                sb.delete(i - countDelete, i - countDelete + 1);
+                countDelete++;
             }
         }
         sentence = sb.toString();
         return sentence;
     }
-    public static boolean getUScurrency(String currency){
+
+    public static boolean getUScurrency(String currency) {
         Pattern p = Pattern.compile("\\$([0-9]*)(\\.[0-9]{2})");
         Matcher m = p.matcher(currency);
         return m.matches();

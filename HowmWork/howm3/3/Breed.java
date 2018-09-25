@@ -1,0 +1,5 @@
+
+public enum Breed {
+	BULLDOG, BULL_TERRIER, DALMATIAN, ROTTWEILER;
+
+}

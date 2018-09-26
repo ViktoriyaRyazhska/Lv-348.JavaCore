@@ -6,7 +6,7 @@ public class dog {
 
 	private String name;
 	private int age;
-	private static  Breed breed;
+	private Breed breed;
 
 	public dog(String name, int age) {
 
@@ -35,7 +35,7 @@ public class dog {
 	}
 
 	public void setBreed(Breed breed) {
-		dog.breed = breed;
+		this.breed = breed;
 	}
 
 	public dog() {
@@ -80,13 +80,17 @@ public class dog {
 	public static void main(String[] args) {
 
 		dog dog1 = new dog("Milka", 3);
-		breed = Breed.Dalmatian;
+		dog1.setBreed(Breed.Dalmatian);
 
 		dog dog2 = new dog("Tuzik", 7);
-		breed = Breed.Bulldog;
+		dog2.setBreed(Breed.Bulldog);
 
 		dog dog3 = new dog("Luky", 5);
-		breed = Breed.Collie;
+		dog3.setBreed(Breed.Collie);
+		System.out.println(dog2);
+		System.out.println(dog3);
+		System.out.println(dog1);
+		
 
 		if (dog1.age>dog2.age && dog1.age>dog3.age) {
 			System.out.println(dog1);

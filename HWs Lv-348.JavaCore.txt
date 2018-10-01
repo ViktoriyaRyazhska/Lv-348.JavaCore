@@ -1,11 +1,11 @@
-                      HW1  HW2   HW3  HW4   HW5   HW6    HW7     HW8
-                          class  if  Loops  OOP Сollect String Exception
+                      HW1  HW2   HW3  HW4   HW5   HW6    HW7     HW8       HW9
+                          class  if  Loops  OOP Сollect String Exception Thread.IO
 Ruslan Zhezlo          +    +     +    +
-Vitalii Yurchenko      +    +     +    +     +     +      +       +
+Vitalii Yurchenko      +    +     +    +     +     +      +       +         +
 Oleksandr Kachmar
 Nazarii Kostiuk        +    +     +    +     +     +      +       +
 Taras Tkhir            +    +     +    +     +     +      +       +
-Maksym Burko           +    +     +    +     +     +      +       +
+Maksym Burko           +    +     +    +     +     +      +       +         +
 Liubomyr Virt          +    +     +    +
-Nazar Smuk             +          +    .
+Nazar Smuk             +    +     +    +     +
 Vladyslav Lukashyn     +          .

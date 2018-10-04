@@ -16,9 +16,18 @@ public class ThreeThreads {
 
 		for(Thread b:a) {
 			
-			b.run();
+			b.start();
+			
+			try {
+				b.join();
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
+		System.out.println("End in the end");
 	}
 
 }

@@ -8,6 +8,10 @@ public class Main {
         Map<Integer,Execute> menu = new HashMap<>();
         menu.put(3, new ThirdTask());
         menu.put(10, new TenthTask());
+        menu.put(4,new Task4());
+        menu.put(5, new Task5());
+        menu.put(1, new Task1());
+        menu.put(9, new Task9());
 
         while(true){
             System.out.print("Choose Task [1..14]: ");

@@ -25,8 +25,5 @@ public class Task4 implements Execute {
 			}
 		}
 		System.out.println(count);
-		
 	}
-
-
 }

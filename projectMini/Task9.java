@@ -1,13 +1,12 @@
-package Java_Tasks;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
-public class Task9 {
+public class Task9 implements Execute {
 
-	public static void main(String[] args) {
+	public static void getNinth(){
 		int a = 0;
 		int b = 0;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,7 +17,7 @@ public class Task9 {
 			e.printStackTrace();
 		}
 		for (int i = 1; i <= b; i++) {
-			if (r1()) 
+			if (r1())
 				a++;
 		}
 		System.out.println("Random number is : " + a);
@@ -28,4 +27,8 @@ public class Task9 {
 		return new Random().nextBoolean();
 	}
 
+	@Override
+	public void exec() {
+		getNinth();
+	}
 }

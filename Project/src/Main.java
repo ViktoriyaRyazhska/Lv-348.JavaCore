@@ -15,7 +15,7 @@ public class Main {
 			mainMenu[5] = new FindLoudLetters();
 			mainMenu[6] = new SmallestDivisible();
 			mainMenu[7] = new USDToHrn();
-			
+			mainMenu[8] = new Fib();
 			for(int i = 0; i < mainMenu.length; i++) {
 				System.out.println("Enter a task number or '0' if you wont to leave: ");
 				taskNum = sc.nextInt();

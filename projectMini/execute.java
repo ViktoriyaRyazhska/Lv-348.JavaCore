@@ -1,3 +1,3 @@
-public interface execute {
+public interface Execute {
     void exec();
 }

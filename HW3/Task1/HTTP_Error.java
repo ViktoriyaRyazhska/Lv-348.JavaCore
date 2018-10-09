@@ -1,5 +1,0 @@
-package homeWork3;
-
-public enum HTTP_Error {
-	BAD_REQUEST, UNAUTHORIZED, PAYMENT_REQUIRED, FORBIDDEN, NOT_FOUND
-}

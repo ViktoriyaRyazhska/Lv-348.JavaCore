@@ -8,10 +8,13 @@ public class Main {
 			int taskNum;
 			Menu[] mainMenu = new Menu[14];
 			mainMenu[0] = new factorial();
-			mainMenu[5] = new PalindromeString();
-			mainMenu[6] = new CalculateNumbersofWords();
-			mainMenu[9] = new RandomValue();
-			mainMenu[10] = new NumberOfSteps();
+			mainMenu[1] = new PalindromeString();
+			mainMenu[2] = new CalculateNumbersofWords();
+			mainMenu[3] = new RandomValue();
+			mainMenu[4] = new NumberOfSteps();
+			mainMenu[5] = new FindLoudLetters();
+			mainMenu[6] = new SmallestDivisible();
+			mainMenu[7] = new USDToHrn();
 			
 			for(int i = 0; i < mainMenu.length; i++) {
 				System.out.println("Enter a task number or '0' if you wont to leave: ");

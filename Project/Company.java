@@ -48,7 +48,7 @@ public class Company {
 	// updates the money spent on writers' salary
 	public static void updateTotalMoneySpent(double salary) {
 		totalMoneyEarned -= salary;
-		System.out.println("Money spent on writers salary:" + totalMoneyEarned);
+		System.out.println("The company must pay its writers: $" + totalMoneyEarned);
 	}
 	
 }

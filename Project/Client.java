@@ -46,6 +46,7 @@ public class Client {
 	// method for calculating the cost of an order
 	public double calcPayment(Scanner input) {
 		double costOfOrder = pagesOrdered * costPerPage;
+		System.out.println("It will cost you: $" + costOfOrder);
 		System.out.println("Do you want to proceed (y, n)?");
 		String response = input.next().toLowerCase();
 		switch (response) {

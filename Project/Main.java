@@ -31,22 +31,23 @@ public class Main {
 		
 		Company uaWriters = new Company(writers, clients);
 		
-		//Making an order
+		makingAnOrder(client1);
+		makingAnOrder(client2);
+		
+//		uaWriters.updateTotalMoneySpent(client1.getPayment());
+//		uaWriters.getTotalMoneyEarned();
+		
+		
+	}
+	
+	//method for making an order
+	
+	static public void makingAnOrder(Client client1){
 		client1.setName(input);
 		client1.askForPagesOrdered(input);
 		client1.calcPayment(input);
 		System.out.println(client1);
-		
-		
 		System.out.println("Next client");
-		//Making an order
-		client2.setName(input);
-		client2.askForPagesOrdered(input);
-		client2.calcPayment(input);
-		System.out.println(client2);
-		
-		uaWriters.updateTotalMoneySpent(client1.getPayment());;
-		
 		
 	}
 
